@@ -1,0 +1,383 @@
+body
+{
+	background-color:#ffb732;
+	font-size:16px;
+	box-sizing:border-box;
+
+}
+.header-nav{
+	background-color: rgba(0,0,0,0.95);
+	border-bottom:3px solid #ffd700;
+	box-shadow: 2px 2px 2px #666666;
+	border-radius:0;
+}
+.navbar-brand h1
+{	
+
+	text-decoration: underline;
+	color:white;
+	font-family: 'Righteous', cursive;
+	font-size:5em;
+	text-shadow: 1px 1px  1px #222;
+	text-align:center;
+	margin-left:210px;
+	margin-top:30px;
+}
+
+#logo{
+	background:url('../images/logo1.png') no-repeat;
+	width:160px;
+	height:160px;
+	margin:15px 15px 10px 15px;
+}
+.navbar-header /*this clears the floating effect and broadens the yellow area to cover the headings*/
+{
+	clear:both;
+	margin-top:-05px;
+}
+
+/*********** cover photo, text and buttons *************/
+/*.jumbotron
+{	
+	position:relative;
+	border-radius:10px;
+	background: url("cover.jpg");
+	background-repeat: no-repeat;
+	background-size:cover;
+	height:500px;
+}
+*/.picture
+{
+	margin-top:50px;
+	position:relative;
+	border-radius:10px;
+	background: url("../images/cover.jpg");
+	background-repeat: no-repeat;
+	background-size:cover;
+	height:500px;
+
+}
+.intro
+{	
+	font-family:"Abel";
+	background-color:black;
+	opacity:0.8;
+	color:white;
+	font-size:3.5em;
+	position:absolute;
+	left:0;  /* this centers the text in center*/
+	right:0;
+	top:100px;	/* this moves the text in up to align nicely in center*/
+	text-align:center;
+}
+
+.login-btn
+{
+	display:inline-block;
+	background-color:black;
+	border:none;
+	border-radius:5px;
+	color:white;
+	padding:6px;
+	text-align:center;
+	font-size:1.2em;
+	opacity:0.9;
+	width:100px;
+}
+.login-btn:hover
+{
+	color:orange;
+	text-decoration: none;
+}
+
+.atags{
+	text-align:center;
+	margin-top:20%;
+}
+
+/***********************login popup************************/
+
+
+#login-popup
+{	
+	width:100%;
+	height:100%;
+	position:fixed; /*this keeps the div in a fixed position which is specified as top left and spans all over the screen due to full % wdth and height*/
+	top:0px;
+	left:0px;
+	display:block;
+	background-color: rgba(0,0,0,0.9); /*this only transparents the background and the property is not inherited into child divs*/
+	
+}
+#signup-popup
+{
+	width:100%;
+	height:100%;
+	position:fixed; /*this keeps the div in a fixed position which is specified as top left and spans all over the screen due to full % wdth and height*/
+	top:0px;
+	left:0px;
+	display:block;
+	background-color: rgba(0,0,0,0.9); /*this only transparents the background and the property is not inherited into child divs*/
+
+}
+form
+{
+	max-width:400px;
+	padding:10px 50px;
+	border:2px solid gray;
+	border-radius:10px;
+	background-color:#f2f2f2;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:200px;
+}
+
+.inner-addon{
+	position:relative;
+}
+.left-addon .glyphicon{
+
+	position:absolute;
+	top:5px;
+	left:10px;
+	padding:15px;
+	color:black;
+
+}
+.field
+{	
+	width:90%;
+	padding:5px;
+	padding-left:30px;
+	margin-top:20px;
+	border-radius:2px;
+	font-family:"Calibri";
+	color:grey;
+	border:1px solid #ccc;
+	font-size:14px;
+	margin-left:15px;
+}
+.button
+{
+	margin-left:20px;
+	text-align:center;
+	font-size:1.0em;
+	background-color:black;
+	border-radius:4px;
+	border:none;
+	color:white;
+	padding:8px 12px;
+	margin-bottom:15px;
+	width:30%;
+
+}
+.button1
+{
+
+	text-align:center;
+	font-size:1.0em;
+	background-color:black;
+	border-radius:4px;
+	border:none;
+	color:white;
+	padding:6px 5px;
+	margin-bottom:15px;
+	width:24%;
+
+}
+.button:hover,.button1:hover{
+	color:orange;
+	text-decoration: none;
+}
+
+.loginbuttons{
+	margin-bottom:5%;
+	margin-top:8%;
+	text-align:center;
+}
+
+
+/***************MAIN page*************************/
+.bar-buttons{
+	text-align:center;
+	display:inline-block;
+	margin-left:0;
+	margin-right:0;
+}
+.tabs{
+	position:relative;
+	height:400px;
+	margin-top:20px;
+	width:70%;
+	margin-right:auto;
+	margin-left:auto;
+}
+.company{
+	background-image:url("../images/topbrands.jpg");
+	background-repeat:  no-repeat;
+	background-size:cover;	
+	}
+
+.banks{
+	background-image:url("../images/bank.jpg");
+	background-repeat:  no-repeat;
+	background-size:cover;	
+	}
+
+.software {
+	background-image:url("../images/sh.jpg");
+	background-repeat:  no-repeat;
+	background-size:cover;	
+	}
+
+.user-btn{
+	position:absolute;
+	/*margin-left:420px;*/
+	left:80%;
+	top:22%;
+	width:100px;
+	padding:5px;
+	border:1px solid #ffb732;
+	border-bottom:none;
+	border-radius:5px;
+	color:white;
+	text-align:center;
+	background-color: black;
+	opacity: 0.9; 
+}
+.sign-out{
+	left:90%;
+}
+.user-btn:hover,.sign-out:hover{
+	text-decoration: none;
+	color:orange;
+}
+.save-btn{
+	display:inline-block;
+	margin-left:60%;
+	margin-top:10px;
+	position:absolute;
+	width:100px;
+	padding:5px;
+	border:1px solid #ffb732;
+	border-bottom:none;
+	border-radius:5px;
+	color:white;
+	text-align:center;
+	background-color: black;
+	opacity: 0.9; 	
+}
+/***************PAGE CONTENT*************************/
+.list{
+	width:auto;
+	background-color:white;
+	padding:15px;
+	border:1px solid black;
+	box-shadow: 5px 5px 5px grey;
+	margin-bottom:20px;
+}
+
+.glyphicon{ /*search bar glyph*/
+
+	position:absolute;
+	margin-top:8px;
+	left:34.5%;
+	padding:5px;
+	color:white;
+
+}
+
+input.searchbar{
+	margin-left:34%;
+	margin-right:auto;
+	color:white;
+	background-color:black;
+	/*opacity:0.9;*/
+	border-radius:20px;
+	width:30%;
+	border:none;
+	padding-left:34px;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-size:16px;
+	margin-bottom:25px;
+	outline: none;
+}
+
+span.details{
+	color:orange;
+	margin-left:15px;
+}
+
+span.data{
+	color:black;
+	padding-left:15px;
+}
+
+h2.name{
+	font-family: 'Righteous', cursive;
+}
+
+hr .stylehr{
+	color:red;
+	height:12px;
+}
+.paging{
+	margin-right:auto;
+	margin-left:auto;
+	color:red;
+}
+.details .glyphicon{
+	color: blue;
+}
+/*************** footer*************************/
+footer{
+	margin-bottom:5px;
+	background:rgba(0,0,0,0.9);
+	border-top:3px solid #ffd700;
+}
+footer div p
+{
+	font-size:1.2em;
+	color:white;
+	padding:4px;
+	margin-top:5px;
+	text-align:center;
+}
+
+
+
+@media (min-width:768px) and (max-width: 991px)
+{
+	.navbar-brand
+	{
+		padding-top:15px;
+		height:170px;
+	}
+
+	.navbar-brand h1
+	{
+		padding-top:10px;
+		font-size:8vw; /*1 vw=1% of viewport width*/
+		margin-left:5px;
+	}
+
+}
+
+
+
+/************EXTRA SMALL SCREENS*********************/
+@media (max-width:767px)
+{
+	.navbar-brand
+	{
+		padding-top:15px;
+		height:170px;
+	}
+
+	.navbar-brand h1
+	{
+		padding-top:10px;
+		font-size:7vw; /*1 vw=1% of viewport width*/
+
+	}
